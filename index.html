@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CobbleTrades - GTS</title>
+    <link rel="stylesheet" href="CSS/style.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <header>
+        <!-- Logo e título do sistema -->
+        <img src="IMG/Logo_cobble.png" alt="Logo CobbleTrades" class="logo-header">
+        <h1>CobbleTrades - Sistema de Trocas</h1>
+        <nav>
+            <!-- Links de navegação -->
+            <ul class="nav-links">
+                <li><a href="pokemon.html">Cadastrar Pokémons</a></li>
+                <li><a href="itens.html">Cadastrar Itens</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Botão para alternar visibilidade do carrinho -->
+        <button id="toggle-carrinho" class="btn-toggle">Esconder Carrinho</button>
+
+        <!-- Carrinho -->
+        <section id="carrinho" class="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="carrinho-lista" class="carrinho-lista">
+                <!-- Os itens do carrinho serão adicionados dinamicamente -->
+            </ul>
+            <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+        </section>
+
+        <!-- Seção de ofertas disponíveis no GTS -->
+        <section id="ofertas">
+            <h2>Ofertas Disponíveis no GTS</h2>
+            <ul id="ofertas-lista" class="ofertas-lista">
+                <!-- As ofertas serão carregadas dinamicamente -->
+            </ul>
+            <button id="limpar-gts" class="btn-limpar">Limpar GTS</button>
+        </section>
+    </main>
+    <script src="JS/index.js"></script>
+</body>
+</html>

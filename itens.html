@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Itens</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <!-- Logo e título do sistema -->
+        <img src="IMG/Logo_cobble.png" alt="Logo CobbleTrades" class="logo-header">
+        <h1>Cadastro de Itens no GTS</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">GTS</a></li>
+                <li><a href="pokemon.html">Gerenciar Pokémons</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulário para adicionar itens ao GTS -->
+        <section id="formulario">
+            <h2>Adicionar Item ao GTS</h2>
+            <form id="form-itens" class="form-horizontal">
+                <div class="form-content">
+                    <div class="input-container">
+                        <!-- Campo para o nome do item -->
+                        <input type="text" id="nome-item" placeholder="Nome do Item" list="item-select" required>
+                        <datalist id="item-select">
+                            <!-- Os nomes dos itens serão carregados dinamicamente -->
+                        </datalist>
+                    </div>
+                    <div class="input-container">
+                        <!-- Campo para o preço do item -->
+                        <input type="number" id="price-item" placeholder="Preço (em créditos)" required>
+                    </div>
+                    <!-- Campo para a imagem do item -->
+                    <img id="imagem-preview" src="" alt="Imagem do Pokémon" style="display: none;">
+                </div>
+                <!-- Botão para enviar -->
+                <button type="submit">Adicionar Item</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CobbleTrades - GTS</p>
+    </footer>
+    <script src="JS/itens.js"></script>
+</body>
+</html>

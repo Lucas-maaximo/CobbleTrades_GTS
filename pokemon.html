@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pokémons</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <!-- Logo e título do sistema -->
+        <img src="IMG/Logo_cobble.png" alt="Logo CobbleTrades" class="logo-header">
+        <h1>Cadastro de Pokémons no GTS</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">GTS</a></li>
+                <li><a href="itens.html">Gerenciar Itens</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulário para adicionar pokemons ao GTS -->
+        <section id="formulario">
+            <h2>Adicionar Pokémon ao GTS</h2>
+            <form id="form-pokemons" class="form-horizontal">
+                <div class="form-content">
+                    <div class="input-container">
+                        <!-- Campo para por o Pokémon -->
+                        <input type="text" id="nome-pokemon" placeholder="Nome do Pokémon" list="pokemon-select" required>
+                        <datalist id="pokemon-select">
+                            <!-- Os nomes dos Pokémons serão carregados dinamicamente -->
+                        </datalist>
+                    </div>
+                    <div class="input-container">
+                        <!-- Campo para o preço do Pokémon -->
+                        <input type="number" id="price-pokemon" placeholder="Preço (em créditos)" required>
+                    </div>
+                    <!-- Campo para a imagem do Pokémon -->
+                    <img id="imagem-preview" src="" alt="Imagem do Pokémon" style="display: none;">
+                </div>
+                <!-- Botão para enviar -->
+                <button type="submit">Adicionar Pokémon</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CobbleTrades - GTS</p>
+    </footer>
+    <script src="JS/pokemon.js"></script>
+</body>
+</html>
